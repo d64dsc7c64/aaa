@@ -119,7 +119,7 @@ col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     # 加载模型
     model_path = Path(config.DETECTION_MODEL_DIR, model_type) if model_type else ""
-model = load_model(model_path) if model_path else None
+    model = load_model(model_path) if model_path else None
 else:
     model = None
 
