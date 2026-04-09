@@ -119,7 +119,7 @@ col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     # 加载模型
     model_path = Path(config.DETECTION_MODEL_DIR, model_type) if model_type else ""
-   import os
+import os
 # 替换原来的那一行
 if model_path and os.path.exists(model_path):
     try:
